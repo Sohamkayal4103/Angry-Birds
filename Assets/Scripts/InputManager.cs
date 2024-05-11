@@ -19,6 +19,7 @@ public class InputManager : MonoBehaviour
 
     private void Awake()
     {
+        PlayerInput = GetComponent<PlayerInput>();
         _mousePositionAction = PlayerInput.actions["MousePosition"];
         _mouseAction = PlayerInput.actions["Mouse"];
     }
